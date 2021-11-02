@@ -1,0 +1,89 @@
+/* // font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto', 'Helvetica', 'sans-serif';
+    color: white
+}
+
+header {
+    height: 5vh;
+}
+
+.month-year {
+    text-align: center;
+    margin: 0 auto;
+    background-color: grey;
+    font-size: 2rem;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 8vh;
+    left: 2vw;
+    margin: 2vw;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+    color: rgb(255, 145, 0);
+}
+
+.grid ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 9vh;
+    background-color: rgba(70, 70, 70, 0.342);
+    border-radius: 15%;
+}
+
+.grid .weekday {
+    font-size: 0.6rem;
+}
+
+.grid li {
+    padding: 4vw;
+    line-height: 2rem;
+    text-align: center;
+    list-style: none;
+}
+
+.sunday {
+    color: red;
+}
+
+.grid .days:hover {
+    background-color: cadetblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.previous {
+    position: fixed;
+    left: 10vw;
+    top: 90vh;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3rem;
+}
+
+.next {
+    position: fixed;
+    left: 90vw;
+    top: 90vh;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3rem;
+}
+
+.previous:hover,
+.next:hover {
+    cursor: pointer;
+    color: rgb(255, 145, 0);
+}
